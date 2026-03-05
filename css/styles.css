@@ -6,37 +6,20 @@
   --clr-neutral-2: hsl(216, 50%, 16%);
   --clr-neutral-3: hsl(217, 54%, 11%);
   --ff-main: "Outfit";
-  --fw-thin: 300;
-  --fw-normal: 400;
-  --fw-bold: 600;
-  --fs-1: 0.625rem;
-  --fs-2: 0.75rem;
-  --fs-3: 0.875rem;
-  --fs-4: 1rem;
-  --fs-5: 1.125rem;
-  --fs-6: 1.25rem;
-  --fs-7: 1.5rem;
-  --fs-8: 1.875rem;
-  --fs-9: 2.25rem;
-  --fs-10: 2.75rem;
-  --fs-11: 3.25rem;
-  --fs-12: 3.875rem;
-  --fs-13: 4.625rem;
-  --fs-14: 5.375rem;
-  --fs-15: 6.125rem;
-  --sp-1: 0.125rem;
-  --sp-2: 0.25rem;
-  --sp-3: 0.5rem;
-  --sp-4: 0.75rem;
-  --sp-5: 1rem;
-  --sp-6: 1.5rem;
-  --sp-7: 2rem;
-  --sp-8: 3rem;
-  --sp-9: 4rem;
-  --sp-10: 5rem;
-  --sp-11: 6rem;
-  --sp-12: 8rem;
-  --desktop-container-width: 37.5rem;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-semi-bold: 600;
+  --fs-1: 1.375rem;
+  --fs-2: 1.125rem;
+  --fs-3: 1rem;
+  --sp-0: 0rem;
+  --sp-1: 0.5rem;
+  --sp-2: 1rem;
+  --sp-3: 1.5rem;
+  --lh-1: 1.25;
+  --lh-2: 1.45;
+  --ls-0: 0px;
+  --desktop-container-width: 21.875rem;
 }
 
 *,
@@ -69,6 +52,47 @@ body {
   font-size: var(--fs-5);
   font-weight: var(--fw-normal);
   line-height: 1.5;
+}
+
+.flow-content > * + * {
+  margin-top: var(--flow-spacer, var(--sp-3));
+}
+
+.split {
+  display: flex;
+}
+
+.split > * {
+  width: 100%;
+}
+
+.container {
+  max-width: var(--desktop-container-width);
+  margin-inline: auto;
+}
+
+.tp-1 {
+  font-size: var(--fs-1);
+  line-height: var(--lh-1);
+  letter-spacing: var(--ls-0);
+  font-weight: var(--fw-semi-bold);
+}
+
+.tp-2 {
+  font-size: var(--fs-2);
+  line-height: var(--lh-2);
+  letter-spacing: var(--ls-0);
+  font-weight: var(--fw-light);
+}
+
+.tp-3 {
+  font-size: var(--fs-3);
+  line-height: var(--lh-1);
+  letter-spacing: var(--ls-0);
+  font-weight: var(--fw-semi-bold);
+}
+.tp-3-regular {
+  font-weight: var(--fw-regular);
 }
 
 /*# sourceMappingURL=styles.css.map */
