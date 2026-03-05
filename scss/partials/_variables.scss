@@ -1,0 +1,51 @@
+@use "./utils" as *;
+
+:root {
+  --clr-primary: hsl(215, 51%, 70%);
+  --clr-accent: hsl(178, 100%, 50%);
+
+  --clr-white: hsl(0, 0%, 100%);
+
+  --clr-neutral-1: hsl(215, 32%, 27%);
+  --clr-neutral-2: hsl(216, 50%, 16%);
+  --clr-neutral-3: hsl(217, 54%, 11%);
+
+  --ff-main: "Outfit";
+
+  --fw-thin: 300;
+  --fw-normal: 400;
+  --fw-bold: 600;
+
+  // FONT SIZE
+  --fs-1: #{toRem(10px)};
+  --fs-2: #{toRem(12px)};
+  --fs-3: #{toRem(14px)};
+  --fs-4: #{toRem(16px)};
+  --fs-5: #{toRem(18px)};
+  --fs-6: #{toRem(20px)};
+  --fs-7: #{toRem(24px)};
+  --fs-8: #{toRem(30px)};
+  --fs-9: #{toRem(36px)};
+  --fs-10: #{toRem(44px)};
+  --fs-11: #{toRem(52px)};
+  --fs-12: #{toRem(62px)};
+  --fs-13: #{toRem(74px)};
+  --fs-14: #{toRem(86px)};
+  --fs-15: #{toRem(98px)};
+
+  // SPACING
+  --sp-1: #{toRem(2px)};
+  --sp-2: #{toRem(4px)};
+  --sp-3: #{toRem(8px)};
+  --sp-4: #{toRem(12px)};
+  --sp-5: #{toRem(16px)};
+  --sp-6: #{toRem(24px)};
+  --sp-7: #{toRem(32px)};
+  --sp-8: #{toRem(48px)};
+  --sp-9: #{toRem(64px)};
+  --sp-10: #{toRem(80px)};
+  --sp-11: #{toRem(96px)};
+  --sp-12: #{toRem(128px)};
+
+  --desktop-container-width: #{toRem(600px)};
+}
