@@ -4,6 +4,8 @@
   --clr-primary: hsl(215, 51%, 70%);
   --clr-accent: hsl(178, 100%, 50%);
 
+  --clr-accent-transparent: rgba(0, 255, 247, 0.4);
+
   --clr-white: hsl(0, 0%, 100%);
 
   --clr-neutral-1: hsl(215, 32%, 27%);
@@ -34,5 +36,16 @@
   // LETTER SPACING
   --ls-0: 0px;
 
+  // BORDER RADIUS
+  --br-1: 8px;
+  --br-2: 15px;
+
+  // BORDERS
+  --border-white: 1px solid var(--clr-white);
+  --border-neutral-1: 1px solid var(--clr-neutral-1);
+
   --desktop-container-width: #{toRem(350px)};
+  --card-max-width: #{toRem(350px)};
+
+  --card-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }

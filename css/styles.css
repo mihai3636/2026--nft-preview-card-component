@@ -1,6 +1,7 @@
 :root {
   --clr-primary: hsl(215, 51%, 70%);
   --clr-accent: hsl(178, 100%, 50%);
+  --clr-accent-transparent: rgba(0, 255, 247, 0.4);
   --clr-white: hsl(0, 0%, 100%);
   --clr-neutral-1: hsl(215, 32%, 27%);
   --clr-neutral-2: hsl(216, 50%, 16%);
@@ -19,7 +20,13 @@
   --lh-1: 1.25;
   --lh-2: 1.45;
   --ls-0: 0px;
+  --br-1: 8px;
+  --br-2: 15px;
+  --border-white: 1px solid var(--clr-white);
+  --border-neutral-1: 1px solid var(--clr-neutral-1);
   --desktop-container-width: 21.875rem;
+  --card-max-width: 21.875rem;
+  --card-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 *,
@@ -52,6 +59,8 @@ body {
   font-size: var(--fs-5);
   font-weight: var(--fw-normal);
   line-height: 1.5;
+  background-color: var(--clr-neutral-3);
+  color: var(--clr-primary);
 }
 
 .flow-content > * + * {
@@ -69,6 +78,13 @@ body {
 .container {
   max-width: var(--desktop-container-width);
   margin-inline: auto;
+}
+
+.highlight {
+  cursor: pointer;
+}
+.highlight:hover {
+  color: var(--clr-accent);
 }
 
 .tp-1 {
@@ -93,6 +109,72 @@ body {
 }
 .tp-3-regular {
   font-weight: var(--fw-regular);
+}
+
+.card {
+  max-width: var(--card-max-width);
+  padding: var(--sp-3);
+  background-color: var(--clr-neutral-2);
+  box-shadow: var(--card-box-shadow);
+  border-radius: var(--br-2);
+}
+
+.card__img-container {
+  position: relative;
+  border-radius: var(--br-1);
+  overflow: hidden;
+}
+.card__img-container:hover > .view-container {
+  opacity: 1;
+}
+
+.view-container {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: var(--clr-accent-transparent);
+}
+
+.card__title {
+  color: var(--clr-white);
+}
+
+.card__desc {
+  --flow-spacer: var(--sp-2);
+}
+
+.card__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__info-container {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-1);
+}
+
+.card__price {
+  color: var(--clr-accent);
+}
+
+.card__footer {
+  border-top: var(--border-neutral-1);
+  padding-top: var(--sp-3);
+  display: flex;
+  gap: var(--sp-2);
+}
+
+.img-avatar {
+  width: 33px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: var(--border-white);
 }
 
 /*# sourceMappingURL=styles.css.map */

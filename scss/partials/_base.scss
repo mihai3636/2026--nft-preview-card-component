@@ -6,6 +6,9 @@ body {
   font-size: var(--fs-5);
   font-weight: var(--fw-normal);
   line-height: 1.5;
+
+  background-color: var(--clr-neutral-3);
+  color: var(--clr-primary);
 }
 
 .flow-content > * + * {
@@ -23,4 +26,12 @@ body {
 .container {
   max-width: var(--desktop-container-width);
   margin-inline: auto;
+}
+
+.highlight {
+  cursor: pointer;
+
+  &:hover {
+    color: var(--clr-accent);
+  }
 }
