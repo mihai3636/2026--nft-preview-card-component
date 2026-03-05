@@ -11,6 +11,14 @@ body {
   color: var(--clr-primary);
 }
 
+main {
+  padding-top: toRem(35px);
+
+  @media (min-width: $bp-desktop) {
+    padding-top: toRem(100px);
+  }
+}
+
 .flow-content > * + * {
   margin-top: var(--flow-spacer, var(--sp-3));
 }
